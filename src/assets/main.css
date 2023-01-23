@@ -25,7 +25,42 @@ a,
   display: flex;
   justify-content: space-around;
 }
-/* .router {
-  margin-right: 25px;
-} */
-
+.datepicker {
+  background: #2d3a48;
+  color: inherit;
+  color-scheme: dark;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  background-color: hsla(160, 100%, 37%, 1);
+  border-radius:4px;
+  border:1px solid #4b8f29;
+  display:inline-block;
+  cursor:pointer;
+  color:#282828;
+  font-size:13px;
+  font-weight:bold;
+  padding:6px 12px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #5b8a3c;
+}
+button:hover {
+  background:linear-gradient(to bottom, #387250 5%, #2a5340 100%);
+  background-color:#72b352;
+}
+button:active {
+  position:relative;
+  top:1px;
+}
+button:disabled {
+  background: none;
+  color: hsla(160, 100%, 37%, 1);
+  box-shadow: none;
+}
