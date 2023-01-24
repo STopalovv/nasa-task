@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
@@ -9,9 +8,8 @@
     <p>We hope that our app will inspire a sense of awe and wonder in all of our users, and will encourage a deeper appreciation for the beauty and complexity of the universe. Thank you for choosing our app and NASA as your guide to the cosmos.</p><br>
     <p>Thank you for choosing our app, and we look forward to helping you discover the wonders of the universe. </p>
   </div>
-
-
 </template>
+
 <style scoped>
   .containerHome {
     text-align: justify;
