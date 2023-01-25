@@ -3,7 +3,7 @@ import { createStore } from "vuex";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from "../firebase/firebase";
 
-const store = createStore({
+const store: any = createStore({
     state: {
         user: null,
         authIsReady: false

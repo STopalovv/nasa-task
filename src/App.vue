@@ -5,7 +5,6 @@
   import store from './store'
   import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
   import { useRouter } from 'vue-router'
-
   export default defineComponent({
     setup() {
       const router = useRouter()
@@ -13,11 +12,9 @@
         store.dispatch('logout')
         location.reload()
       }
-
       const googleLogin = () => {
         store.dispatch('googleLogin')
       } 
-
       return {
         handleClick,
         user : computed(() => store.state.user),
@@ -129,7 +126,6 @@
     padding: 0 10px 10px 0;
   }
 } 
-
 @media only screen and (max-width: 768px) {
   .navContainer {
     display: flex;

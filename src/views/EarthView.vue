@@ -18,17 +18,14 @@
   export default defineComponent({
     setup() {
       const imageRef = ref<HTMLImageElement | null>(null)
-
       function zoomIn(){
       imageRef.value!.style.cursor = "zoom-in"
       imageRef.value!.style.transform = "scale(1.5)"
     }
-
     function zoomOut(){
       imageRef.value!.style.cursor = "default"
       imageRef.value!.style.transform = "scale(1)"
     }
-
     function toggleZoom(){
       if(imageRef.value!.style.transform === "scale(1.5)") {
         zoomOut()
@@ -36,7 +33,6 @@
         zoomIn()
       }
     }
-
       function fetchUrl(url: string) {
         return fetch(url).then(res => res.json());
       }
